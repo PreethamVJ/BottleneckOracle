@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python create_status_tracker.py)",
+      "Bash(mv model_1f1b.ipynb legacy/)",
+      "Bash(mv patch_nb03.py legacy/)",
+      "Bash(mv src:*)",
+      "Bash(mv paper:*)",
+      "Bash(mv create_status_tracker.py legacy/)",
+      "Bash(mv legacy/02-trace-generation-fixed.ipynb notebooks/02_trace_generation.ipynb)",
+      "Bash(mv legacy/03_heterogat_fixed.ipynb notebooks/03_heterogat_models.ipynb)",
+      "Bash(mv legacy/04_timing_based_dag.ipynb notebooks/04_timing_based_dag.ipynb)",
+      "Bash(mv legacy/model_1f1b.ipynb notebooks/01_baseline_models.ipynb)",
+      "Bash(mv 01_baseline_models.ipynb 01_working_baselines.ipynb)",
+      "Bash(mv 02_trace_generation.ipynb 02_data_generation.ipynb)",
+      "Bash(mv 03_heterogat_models.ipynb 03_heterogat_models.ipynb)",
+      "Bash(mv 04_timing_based_dag.ipynb 04_dag_construction.ipynb)",
+      "Bash(ls -1 *.ipynb)",
+      "Bash(grep -v \"~\\\\$\")"
+    ]
+  }
+}
