@@ -16,7 +16,11 @@
       "Bash(mv 03_heterogat_models.ipynb 03_heterogat_models.ipynb)",
       "Bash(mv 04_timing_based_dag.ipynb 04_dag_construction.ipynb)",
       "Bash(ls -1 *.ipynb)",
-      "Bash(grep -v \"~\\\\$\")"
+      "Bash(grep -v \"~\\\\$\")",
+      "Bash(mv 02_data_generation.ipynb 02-trace-generation-fixed.ipynb)",
+      "Bash(mv 03_heterogat_models.ipynb 03_heterogat_fixed.ipynb)",
+      "Bash(mv 04_dag_construction.ipynb 04_timing_based_dag.ipynb)",
+      "Bash(ls -la legacy/*.ipynb)"
     ]
   }
 }

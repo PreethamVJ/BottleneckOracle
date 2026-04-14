@@ -53,20 +53,20 @@ BottleneckOracle/
 - **Results**: MSE + ΔT error metrics, train/val/test splits
 - **Usage**: Reference for baseline comparisons, load trained MLP models
 
-**Notebook 02: Data Generation** (`02_data_generation.ipynb`) 
-- **Status**: ✅ COMPLETE
+**Notebook 02: Data Generation** (`02-trace-generation-fixed.ipynb`) 
+- **Status**: ✅ COMPLETE - **TEAMMATE'S WORK - UNCHANGED**
 - **Contains**: Complete trace generation pipeline with HuggingFace integration
 - **Features**: Fixed graph edge construction, multi-task heads, 501 synthetic graphs
 - **Usage**: Load this dataset for all subsequent experiments
 
-**Notebook 03: HeteroGAT Models** (`03_heterogat_models.ipynb`)
-- **Status**: ✅ COMPLETE  
+**Notebook 03: HeteroGAT Models** (`03_heterogat_fixed.ipynb`)
+- **Status**: ✅ COMPLETE - **TEAMMATE'S WORK - UNCHANGED**
 - **Contains**: Both bidirectional + directed HeteroGAT variants
 - **Features**: 2-layer heterogeneous GNN, multi-task learning, comprehensive evaluation
 - **Usage**: Load trained models for what-if analysis and ablations
 
-**Notebook 04: DAG Construction** (`04_dag_construction.ipynb`)
-- **Status**: ✅ COMPLETE
+**Notebook 04: DAG Construction** (`04_timing_based_dag.ipynb`)
+- **Status**: ✅ COMPLETE - **TEAMMATE'S WORK - UNCHANGED**
 - **Contains**: Timing-based DAG construction with genuine parallelism
 - **Features**: Realistic edge creation, critical path labeling
 - **Usage**: Reference for graph construction methodology
@@ -123,11 +123,17 @@ The `legacy/` folder contains superseded or utility files:
 
 ## 🔗 Dependencies & Workflow
 
+**IMPORTANT: Teammate's Preserved Work**
+- `02-trace-generation-fixed.ipynb` → **Your teammate's work - UNCHANGED**
+- `03_heterogat_fixed.ipynb` → **Your teammate's work - UNCHANGED** 
+- `04_timing_based_dag.ipynb` → **Your teammate's work - UNCHANGED**
+- **Only moved from legacy/ - no code modifications, ownership preserved**
+
 **Data Flow:**
-- Notebook 02 → generates dataset stored on HuggingFace
-- Notebook 01 → trained baselines (1F1B + MLP)
-- Notebook 03 → trained HeteroGAT models
-- Notebook 04 → DAG construction methodology
+- `02-trace-generation-fixed.ipynb` → generates dataset stored on HuggingFace
+- `01_working_baselines.ipynb` → trained baselines (1F1B + MLP)
+- `03_heterogat_fixed.ipynb` → trained HeteroGAT models
+- `04_timing_based_dag.ipynb` → DAG construction methodology
 
 **Completion Chain:**
 - Notebook 01 results → Notebook 05 (finish Table 1)
