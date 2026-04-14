@@ -9,3 +9,5 @@ matplotlib
 scipy
 tqdm
 pyyaml
+llama-index 
+llama-index-llms-cohere
